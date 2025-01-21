@@ -5,7 +5,7 @@ mod fib_iterative;
 mod fib_dynamic;
 
 fn main() {
-    let n = 50;
+    let n = 30;
 
     let now = Instant::now();
     let fib_recursive_result = fib_recursive::fib_recursive(n);

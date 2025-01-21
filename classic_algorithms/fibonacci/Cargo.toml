@@ -1,5 +1,5 @@
 [package]
-name = "classic_algorithms"
+name = "fibonacci"
 version = "0.1.0"
 edition = "2021"
 
