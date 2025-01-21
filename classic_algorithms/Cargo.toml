@@ -1,0 +1,18 @@
+[package]
+name = "classic_algorithms"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fib_recursive"
+path = "src/fib_recursive.rs"
+
+[[bin]]
+name = "fib_dynamic"
+path = "src/fib_dynamic.rs"
+
+[[bin]]
+name = "fib_iterative"
+path = "src/fib_iterative.rs"
+
+[dependencies]
