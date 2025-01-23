@@ -1,0 +1,56 @@
+---
+fail_fast: true
+
+repos:
+- repo: https://github.com/compilerla/conventional-pre-commit
+  rev: v3.6.0
+  hooks:
+    - id: conventional-pre-commit
+      name: Check Conventional Commit
+      stages: [commit-msg]
+      args: [--strict, --force-scope]
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+    - id: check-yaml
+      name: Check YAML
+      stages: [pre-commit]
+
+    - id: mixed-line-ending
+      name: Check Mixed Line Endings
+      stages: [pre-commit]
+      args: [--fix=lf]
+
+    - id: end-of-file-fixer
+      name: Check End of Files
+      stages: [pre-commit]
+
+    - id: trailing-whitespace
+      name: Check Trailing Whitespace
+      stages: [pre-commit]
+      args: [--markdown-linebreak-ext=md]
+
+    - id: check-merge-conflict
+      name: Check for Merge Conflicts
+      stages: [pre-commit]
+
+    - id: detect-private-key
+      name: Check Private Keys
+      stages: [pre-commit]
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+    -   id: check-byte-order-marker
+    -   id: check-case-conflict
+    -   id: check-merge-conflict
+    -   id: check-symlinks
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: mixed-line-ending
+    -   id: trailing-whitespace
+-   repo: https://github.com/pre-commit/pre-commit
+    rev: v2.5.1
+    hooks:
+    -   id: validate_manifest

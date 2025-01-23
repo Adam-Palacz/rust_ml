@@ -8,7 +8,7 @@ name = "lr_classic"
 path = "src/bin/lr_classic.rs"
 
 [[bin]]
-name = "lr_with_gradient" 
+name = "lr_with_gradient"
 path = "src/bin/lr_with_gradient.rs"
 
 [dependencies]

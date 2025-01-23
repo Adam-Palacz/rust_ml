@@ -94,7 +94,7 @@ fn main() {
     model.fit(&x, &y);
 
     println!("y = {}x + {}", model.slope, model.intercept);
-    
+
     let test_x = 3.0;
     let prediction = model.predict(test_x);
     println!("Prediction for x={}: {}", test_x, prediction);
