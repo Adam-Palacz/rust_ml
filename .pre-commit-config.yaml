@@ -20,7 +20,7 @@ repos:
     - id: mixed-line-ending
       name: Check Mixed Line Endings
       stages: [pre-commit]
-      args: [--fix=lf]
+      args: [--fix=crlf]
 
     - id: end-of-file-fixer
       name: Check End of Files

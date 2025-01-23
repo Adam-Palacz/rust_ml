@@ -5,10 +5,11 @@ edition = "2021"
 
 [[bin]]
 name = "lr_classic"
-path = "src/bin/lr_classic.rs"
+path = "src/lr_classic/mod.rs"
 
 [[bin]]
 name = "lr_with_gradient"
-path = "src/bin/lr_with_gradient.rs"
+path = "src/lr_with_gradient/mod.rs"
 
 [dependencies]
+shared_functions = { path = "../shared_functions" }
